@@ -31,6 +31,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
+    
+    func goToHome(){
+//        guard let window = UIApplication.shared.keyWindow else{return}
+//        window.frame = UIScreen.main.bounds
+//        window.backgroundColor = .white
+//        
+//        let homeViewController = HomeViewController(nibName: "Home", bundle: nil)
+//        let settingsViewController = SettingsViewController(nibName: "SettingsView", bundle: nil)
+//        let exploreViewController = ExploreViewController(nibName: "ExploreView", bundle: nil)
+//        let newsViewController = NewsViewController(nibName: "NewsView", bundle: nil)
+        
+    }
 
 
 }
