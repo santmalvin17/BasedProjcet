@@ -31,12 +31,12 @@
 		A315214924ACF33D0029EFE6 /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A315214724ACF33D0029EFE6 /* CameraViewController.xib */; };
 		A315215124ACF36E0029EFE6 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315214F24ACF36E0029EFE6 /* AlarmViewController.swift */; };
 		A315215224ACF36E0029EFE6 /* AlarmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A315215024ACF36E0029EFE6 /* AlarmViewController.xib */; };
-		A315215624ACF38D0029EFE6 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315215424ACF38D0029EFE6 /* ChatViewController.swift */; };
-		A315215724ACF38D0029EFE6 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A315215524ACF38D0029EFE6 /* ChatViewController.xib */; };
 		A315215B24ACF5950029EFE6 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315215924ACF5950029EFE6 /* FavoriteViewController.swift */; };
 		A315215C24ACF5950029EFE6 /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A315215A24ACF5950029EFE6 /* FavoriteViewController.xib */; };
 		A315216024ACFC1E0029EFE6 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315215E24ACFC1E0029EFE6 /* MoreViewController.swift */; };
 		A315216124ACFC1E0029EFE6 /* MoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A315215F24ACFC1E0029EFE6 /* MoreViewController.xib */; };
+		A315216424ACFD950029EFE6 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315216224ACFD950029EFE6 /* ChatViewController.swift */; };
+		A315216524ACFD950029EFE6 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A315216324ACFD950029EFE6 /* ChatViewController.xib */; };
 		BFC0E022F4B1332B27C74796 /* Pods_BasedProjcet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CB5882C5BD8279EB52C337 /* Pods_BasedProjcet.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,12 +69,12 @@
 		A315214724ACF33D0029EFE6 /* CameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
 		A315214F24ACF36E0029EFE6 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
 		A315215024ACF36E0029EFE6 /* AlarmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmViewController.xib; sourceTree = "<group>"; };
-		A315215424ACF38D0029EFE6 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
-		A315215524ACF38D0029EFE6 /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 		A315215924ACF5950029EFE6 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		A315215A24ACF5950029EFE6 /* FavoriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
 		A315215E24ACFC1E0029EFE6 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		A315215F24ACFC1E0029EFE6 /* MoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreViewController.xib; sourceTree = "<group>"; };
+		A315216224ACFD950029EFE6 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		A315216324ACFD950029EFE6 /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 		C7AFFDCCC08D811C83EBA460 /* Pods-BasedProjcet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasedProjcet.debug.xcconfig"; path = "Target Support Files/Pods-BasedProjcet/Pods-BasedProjcet.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -243,8 +243,8 @@
 		A315215324ACF37E0029EFE6 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				A315215424ACF38D0029EFE6 /* ChatViewController.swift */,
-				A315215524ACF38D0029EFE6 /* ChatViewController.xib */,
+				A315216224ACFD950029EFE6 /* ChatViewController.swift */,
+				A315216324ACFD950029EFE6 /* ChatViewController.xib */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -334,7 +334,7 @@
 				A315212D24AC823C0029EFE6 /* LoginViewController.xib in Resources */,
 				A315214424ACF32B0029EFE6 /* FeedViewController.xib in Resources */,
 				A315216124ACFC1E0029EFE6 /* MoreViewController.xib in Resources */,
-				A315215724ACF38D0029EFE6 /* ChatViewController.xib in Resources */,
+				A315216524ACFD950029EFE6 /* ChatViewController.xib in Resources */,
 				A315213124AC871F0029EFE6 /* HomeViewController.xib in Resources */,
 				A315213524ACF0960029EFE6 /* SettingsViewController.xib in Resources */,
 				A315213924ACF0B20029EFE6 /* ExploreViewController.xib in Resources */,
@@ -403,11 +403,11 @@
 				A315213E24ACF0D60029EFE6 /* NewsViewController.swift in Sources */,
 				0A1FC3D224AC5E0F0091A13B /* AppDelegate.swift in Sources */,
 				0A1FC3D424AC5E0F0091A13B /* SceneDelegate.swift in Sources */,
+				A315216424ACFD950029EFE6 /* ChatViewController.swift in Sources */,
 				0A1FC41124ACC94F0091A13B /* ModelDataLogin.swift in Sources */,
 				0A1FC41324ACCA250091A13B /* MenuNavBar.swift in Sources */,
 				A315213024AC871F0029EFE6 /* HomeViewController.swift in Sources */,
 				A315214324ACF32B0029EFE6 /* FeedViewController.swift in Sources */,
-				A315215624ACF38D0029EFE6 /* ChatViewController.swift in Sources */,
 				A315213824ACF0B20029EFE6 /* ExploreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
