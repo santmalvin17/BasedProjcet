@@ -14,6 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var navController: UINavigationController?
     var loginViewController: LoginViewController?
+    var navArrayMenu = [UINavigationController]()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -42,15 +43,60 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func goToHome(){
-//        guard let window = UIApplication.shared.keyWindow else{return}
-//        window.frame = UIScreen.main.bounds
-//        window.backgroundColor = .white
-//
-//        let homeViewController = HomeViewController(nibName: "Home", bundle: nil)
-//        let settingsViewController = SettingsViewController(nibName: "SettingsView", bundle: nil)
-//        let exploreViewController = ExploreViewController(nibName: "ExploreView", bundle: nil)
-//        let newsViewController = NewsViewController(nibName: "NewsView", bundle: nil)
+        guard let window = UIApplication.shared.keyWindow else{
+            return
+            
+        }
+        window.frame = UIScreen.main.bounds
+        window.backgroundColor = .white
         
+        let homeViewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
+        let settingsViewController = SettingsViewController(nibName: "SettingsViewController", bundle: nil)
+        let exploreViewController = ExploreViewController(nibName: "ExploreViewController", bundle: nil)
+        let newsViewController = NewsViewController(nibName: "NewsViewController", bundle: nil)
+        let feedViewController = FeedViewController(nibName: "FeedViewController", bundle: nil)
+        let cameraViewController = CameraViewController(nibName: "CameraViewController", bundle: nil)
+        let alarmViewController = AlarmViewController(nibName: "AlarmViewController", bundle: nil)
+        let chatViewController = ChatViewController(nibName: "ChatViewController", bundle: nil)
+        let favoriteViewController = FavoriteViewController(nibName: "FavoriteViewController", bundle: nil)
+        let moreViewController = MoreViewController(nibName: "MoreViewController", bundle: nil)
+
+        UITabBar.appearance().tintColor = .blue
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Helvetica Neue", size: 10)!], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Helvetica Neue", size: 10)!], for: .selected)
+        
+        let dashboard = UINavigationController(rootViewController: homeViewController)
+        let settings = UINavigationController(rootViewController: settingsViewController)
+        let explore = UINavigationController(rootViewController: exploreViewController)
+        let news = UINavigationController(rootViewController: newsViewController)
+        let feed = UINavigationController(rootViewController: feedViewController)
+        let camera = UINavigationController(rootViewController: cameraViewController)
+        let alarm = UINavigationController(rootViewController: alarmViewController)
+        let chat = UINavigationController(rootViewController: chatViewController)
+        let favorite = UINavigationController(rootViewController: favoriteViewController)
+        let more = UINavigationController(rootViewController: moreViewController)
+        
+        let menuDictionary: [String: UINavigationController] = [
+            "1": settings,
+            "2": favorite,
+            "3": feed,
+            "4": camera,
+            "5": alarm,
+            "6": chat,
+        ]
+        
+        let modelDataLogin = ModelDataLogin()
+        
+        var menuName: [String: String] = [:]
+        for menuItem in modelDataLogin.menuNavBar! {
+            let menu = menuItem.mobileMenuId
+            guard let menuNav = menuDictionary["\(menu)"] else {
+                return
+            }
+            menuName["\(menuItem.mobileMenuId)"] = menuItem.mobileMenuDesc
+            navArrayMenu.append(menuNav)
+        }
+        navArrayMenu.append(more)
     }
 
 

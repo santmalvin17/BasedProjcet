@@ -2,12 +2,11 @@
 //  SettingsViewController.swift
 //  BasedProjcet
 //
-//  Created by Malvin Santoso on 01/07/20.
+//  Created by Gregory Kevin on 01/07/20.
 //  Copyright © 2020 Malvin Santoso. All rights reserved.
 //
 
 import UIKit
-//import AWSAuthCore
 
 class SettingsViewController: UIViewController {
 
@@ -16,7 +15,7 @@ class SettingsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
+
 
     /*
     // MARK: - Navigation
