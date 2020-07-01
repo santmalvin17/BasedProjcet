@@ -6,7 +6,7 @@ target 'BasedProjcet' do
   use_frameworks!
 
   # Pods for BasedProjcet
-pod ‘Alamofire’, ‘~> 5.0.0-beta.3’
+pod 'Alamofire', ‘~> 4.8.2’
 pod ‘SwiftyJSON’, ‘~> 4.0’
 pod 'SVProgressHUD'
 

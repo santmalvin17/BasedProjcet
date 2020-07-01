@@ -18,7 +18,7 @@ class ModelDataLogin: NSObject {
     func objectMapping(json: JSON){
         for data in json["data"]["menuNavbars"].arrayValue {
             let d = MenuNavBar()
-            d.objectMapping(json: data)
+//            d.objectMapping(json: data)
             menuNavbars.append(d)
         }
         for data in json["data"]["userAccess"].arrayValue {

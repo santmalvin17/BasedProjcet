@@ -9,6 +9,7 @@
 import UIKit
 import SwiftyJSON
 import Alamofire
+import SVProgressHUD
 
 class LoginViewController: UIViewController {
 
@@ -16,15 +17,33 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
 
     @IBAction func continueButtonTapped(_ sender: Any) {
         let vc = HomeViewController()
         navigationController?.pushViewController(vc, animated: true)
-        ACRequest.POST_SIGNIN(email: emailTextField.text!, password: passwordTextField.text!)
-        let appDelegate = UIApplication.shared.delegate as? AppDelegate
-        appDelegate?.goToHome()
+        
+        ACRequest.POST_SIGNIN(email: emailTextField.text!, password: passwordTextField.text!, successCompletion: { (loginData) in
+            ACData.LOGINDATA = loginData
+            SVProgressHUD.dismiss()
+            print(ACData.LOGINDATA.token)
+            print(ACData.LOGINDATA.menuNavbars[0].mobileMenuDesc)
+            print(ACData.LOGINDATA.userAccess[0].name)
+            let appDelegate = UIApplication.shared.delegate as? AppDelegate
+            appDelegate?.goToHome()
+        }) { (message) in
+            SVProgressHUD.dismiss()
+            let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
 //    func login() {
