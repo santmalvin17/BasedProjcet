@@ -2,7 +2,7 @@
 //  LoginViewController.swift
 //  BasedProjcet
 //
-//  Created by Malvin Santoso on 01/07/20.
+//  Created by Gregory Kevin on 01/07/20.
 //  Copyright © 2020 Malvin Santoso. All rights reserved.
 //
 
@@ -15,8 +15,12 @@ class LoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
 
+    @IBAction func continueButtonTapped(_ sender: Any) {
+        let vc = HomeViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 

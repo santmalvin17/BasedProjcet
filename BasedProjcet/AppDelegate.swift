@@ -11,10 +11,19 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
+    var navController: UINavigationController?
+    var loginViewController: LoginViewController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+//        window = UIWindow.init(frame: UIScreen.main.bounds)
+//        loginViewController = LoginViewController(nibName: "LoginViewController", bundle: nil)
+//        navController = UINavigationController(rootViewController: loginViewController!)
+//        window?.rootViewController = navController
+//        window?.makeKeyAndVisible()
+        
         return true
     }
 
@@ -36,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        guard let window = UIApplication.shared.keyWindow else{return}
 //        window.frame = UIScreen.main.bounds
 //        window.backgroundColor = .white
-//        
+//
 //        let homeViewController = HomeViewController(nibName: "Home", bundle: nil)
 //        let settingsViewController = SettingsViewController(nibName: "SettingsView", bundle: nil)
 //        let exploreViewController = ExploreViewController(nibName: "ExploreView", bundle: nil)
