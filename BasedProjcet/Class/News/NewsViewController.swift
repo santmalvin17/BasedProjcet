@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AWSAuthCore
+//import AWSAuthCore
 
 class NewsViewController: UIViewController {
 

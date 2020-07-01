@@ -8,9 +8,9 @@
 
 import Foundation
 
-class ModelDataLogin:NSObject{
-    var menuNavBar:[MenuNavBar] = []
-    var userAccess:[UserAccess] = []
-    var token = ""
+struct ModelDataLogin: Decodable {
+    var menuNavBar:[MenuNavBar]?
+    var userAccess:[UserAccess]?
+    var token:String?
     
 }

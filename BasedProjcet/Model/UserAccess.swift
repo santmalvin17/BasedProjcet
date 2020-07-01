@@ -8,7 +8,7 @@
 
 import Foundation
 
-class UserAccess:NSObject{
-    var item:[Item] = []
+struct UserAccess: Decodable{
+    var item:[Item]?
     
 }

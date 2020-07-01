@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Item:NSObject{
+struct Item: Decodable{
     var mobileMenuDesc:String?
     var mobileMenuId:Int?
 }

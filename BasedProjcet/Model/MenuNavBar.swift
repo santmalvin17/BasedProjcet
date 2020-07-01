@@ -8,8 +8,8 @@
 
 import Foundation
 
-class MenuNavBar:NSObject{
+struct MenuNavBar: Decodable{
     var mobileMenuDesc:String?
     var mobileMenuId:Int?
-    var sequenceNo:Long?
+    var sequenceNo:Int?
 }
