@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class LoginViewController: UIViewController {
 
@@ -19,6 +20,7 @@ class LoginViewController: UIViewController {
     @IBAction func continueButtonTapped(_ sender: Any) {
         let vc = HomeViewController()
         navigationController?.pushViewController(vc, animated: true)
+         UserDefaults.standard.string(forKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZyZWRAZ21haWwuY29tIiwiaWF0IjoxNTkzNjAwNDA2LCJleHAiOjE1OTM2MDEwMDZ9.JD3Fe-i03OyXbshdXwN0rHUB4zF1jV2Agu0ROdbsgrw")
     }
     
     /*
