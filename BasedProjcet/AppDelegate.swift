@@ -78,50 +78,50 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let favorite = UINavigationController(rootViewController: favoriteViewController)
         let more = UINavigationController(rootViewController: moreViewController)
         
-        let menuDictionary: [String: UINavigationController] = [
-            "1": settings,
-            "2": favorite,
-            "3": feed,
-            "4": camera,
-            "5": alarm,
-            "6": chat,
+        let menuDictionary: [Int: UINavigationController] = [
+            1: settings,
+            2: favorite,
+            3: feed,
+            4: camera,
+            5: alarm,
+            6: chat,
         ]
         
         let modelDataLogin = ModelDataLogin()
         
         
-        var menuName: [String: String] = [:]
+        var menuName: [Int: String] = [:]
         print(modelDataLogin.menuNavbars)
-        for menuItem in modelDataLogin.menuNavbars {
+        for menuItem in ACData.LOGINDATA.menuNavbars {
             print("masuk")
-            let menu = menuItem.mobileMenuId
-            guard let menuNav = menuDictionary["\(menu)"] else {
+            let menu = menuItem.mobileMenuId!
+            guard let menuNav = menuDictionary[menu] else {
                 return
             }
-            menuName["\(menuItem.mobileMenuId)"] = menuItem.mobileMenuDesc
+            menuName[menuItem.mobileMenuId!] = menuItem.mobileMenuDesc
             navArrayMenu.append(menuNav)
         }
         navArrayMenu.append(more)
         
-        let settingsTab = UITabBarItem(title: menuName["1"], image: .checkmark, selectedImage: .none)
+        let settingsTab = UITabBarItem(title: menuName[1], image: .checkmark, selectedImage: .none)
         settingsViewController.tabBarItem = settingsTab
         
-        let favoriteTab = UITabBarItem(title: menuName["2"], image: .checkmark, selectedImage: .none)
+        let favoriteTab = UITabBarItem(title: menuName[2], image: .checkmark, selectedImage: .add)
         favoriteViewController.tabBarItem = favoriteTab
         
-        let feedTab = UITabBarItem(title: menuName["3"], image: .checkmark, selectedImage: .none)
+        let feedTab = UITabBarItem(title: menuName[3], image: .checkmark, selectedImage: .add)
         feedViewController.tabBarItem = feedTab
         
-        let cameraTab = UITabBarItem(title: menuName["4"], image: .checkmark, selectedImage: .none)
+        let cameraTab = UITabBarItem(title: menuName[4], image: .checkmark, selectedImage: .add)
         cameraViewController.tabBarItem = cameraTab
         
-        let alarmTab = UITabBarItem(title: menuName["5"], image: .checkmark, selectedImage: .none)
+        let alarmTab = UITabBarItem(title: menuName[5], image: .checkmark, selectedImage: .add)
         alarmViewController.tabBarItem = alarmTab
         
-        let chatTab = UITabBarItem(title: menuName["6"], image: .checkmark, selectedImage: .none)
+        let chatTab = UITabBarItem(title: menuName[6], image: .checkmark, selectedImage: .add)
         chatViewController.tabBarItem = chatTab
         
-        let moreTab = UITabBarItem(title: "More", image: .checkmark, selectedImage: .none)
+        let moreTab = UITabBarItem(title: "More", image: .checkmark, selectedImage: .add)
         moreViewController.tabBarItem = moreTab
         
         tabBarController.viewControllers = navArrayMenu

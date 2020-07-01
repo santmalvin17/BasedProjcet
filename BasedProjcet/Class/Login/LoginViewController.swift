@@ -33,9 +33,6 @@ class LoginViewController: UIViewController {
         ACRequest.POST_SIGNIN(email: emailTextField.text!, password: passwordTextField.text!, successCompletion: { (loginData) in
             ACData.LOGINDATA = loginData
             SVProgressHUD.dismiss()
-            print(ACData.LOGINDATA.token)
-            print(ACData.LOGINDATA.menuNavbars[0].mobileMenuDesc)
-            print(ACData.LOGINDATA.userAccess[0].name)
             let appDelegate = UIApplication.shared.delegate as? AppDelegate
             appDelegate?.goToHome()
         }) { (message) in
