@@ -1,5 +1,5 @@
 //
-//  NewsViewController.swift
+//  CameraViewController.swift
 //  BasedProjcet
 //
 //  Created by Gregory Kevin on 01/07/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NewsViewController: UIViewController {
+class CameraViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -11,12 +11,6 @@
 		0A1FC3D424AC5E0F0091A13B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1FC3D324AC5E0F0091A13B /* SceneDelegate.swift */; };
 		0A1FC3DB24AC5E120091A13B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A1FC3DA24AC5E120091A13B /* Assets.xcassets */; };
 		0A1FC3DE24AC5E120091A13B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A1FC3DC24AC5E120091A13B /* LaunchScreen.storyboard */; };
-		0A1FC3F624AC5FF70091A13B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1FC3F524AC5FF70091A13B /* SettingsViewController.swift */; };
-		0A1FC3FD24AC601B0091A13B /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1FC3FC24AC601B0091A13B /* ExploreViewController.swift */; };
-		0A1FC3FF24AC602B0091A13B /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1FC3FE24AC602B0091A13B /* NewsViewController.swift */; };
-		0A1FC40524AC65AA0091A13B /* NewsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A1FC40424AC65AA0091A13B /* NewsView.xib */; };
-		0A1FC40724AC65B90091A13B /* ExploreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A1FC40624AC65B90091A13B /* ExploreView.xib */; };
-		0A1FC40924AC65C20091A13B /* SettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A1FC40824AC65C20091A13B /* SettingsView.xib */; };
 		0A1FC41124ACC94F0091A13B /* ModelDataLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1FC41024ACC94F0091A13B /* ModelDataLogin.swift */; };
 		0A1FC41324ACCA250091A13B /* MenuNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1FC41224ACCA250091A13B /* MenuNavBar.swift */; };
 		0A1FC41524ACCA4B0091A13B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1FC41424ACCA4B0091A13B /* Item.swift */; };
@@ -25,6 +19,24 @@
 		A315212D24AC823C0029EFE6 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A315212B24AC823C0029EFE6 /* LoginViewController.xib */; };
 		A315213024AC871F0029EFE6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315212E24AC871F0029EFE6 /* HomeViewController.swift */; };
 		A315213124AC871F0029EFE6 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A315212F24AC871F0029EFE6 /* HomeViewController.xib */; };
+		A315213424ACF0960029EFE6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315213224ACF0960029EFE6 /* SettingsViewController.swift */; };
+		A315213524ACF0960029EFE6 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A315213324ACF0960029EFE6 /* SettingsViewController.xib */; };
+		A315213824ACF0B20029EFE6 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315213624ACF0B20029EFE6 /* ExploreViewController.swift */; };
+		A315213924ACF0B20029EFE6 /* ExploreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A315213724ACF0B20029EFE6 /* ExploreViewController.xib */; };
+		A315213E24ACF0D60029EFE6 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315213C24ACF0D60029EFE6 /* NewsViewController.swift */; };
+		A315213F24ACF0D60029EFE6 /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A315213D24ACF0D60029EFE6 /* NewsViewController.xib */; };
+		A315214324ACF32B0029EFE6 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315214124ACF32B0029EFE6 /* FeedViewController.swift */; };
+		A315214424ACF32B0029EFE6 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A315214224ACF32B0029EFE6 /* FeedViewController.xib */; };
+		A315214824ACF33D0029EFE6 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315214624ACF33D0029EFE6 /* CameraViewController.swift */; };
+		A315214924ACF33D0029EFE6 /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A315214724ACF33D0029EFE6 /* CameraViewController.xib */; };
+		A315215124ACF36E0029EFE6 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315214F24ACF36E0029EFE6 /* AlarmViewController.swift */; };
+		A315215224ACF36E0029EFE6 /* AlarmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A315215024ACF36E0029EFE6 /* AlarmViewController.xib */; };
+		A315215624ACF38D0029EFE6 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315215424ACF38D0029EFE6 /* ChatViewController.swift */; };
+		A315215724ACF38D0029EFE6 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A315215524ACF38D0029EFE6 /* ChatViewController.xib */; };
+		A315215B24ACF5950029EFE6 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315215924ACF5950029EFE6 /* FavoriteViewController.swift */; };
+		A315215C24ACF5950029EFE6 /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A315215A24ACF5950029EFE6 /* FavoriteViewController.xib */; };
+		A315216024ACFC1E0029EFE6 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315215E24ACFC1E0029EFE6 /* MoreViewController.swift */; };
+		A315216124ACFC1E0029EFE6 /* MoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A315215F24ACFC1E0029EFE6 /* MoreViewController.xib */; };
 		BFC0E022F4B1332B27C74796 /* Pods_BasedProjcet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CB5882C5BD8279EB52C337 /* Pods_BasedProjcet.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,12 +47,6 @@
 		0A1FC3DA24AC5E120091A13B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A1FC3DD24AC5E120091A13B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A1FC3DF24AC5E120091A13B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A1FC3F524AC5FF70091A13B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		0A1FC3FC24AC601B0091A13B /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
-		0A1FC3FE24AC602B0091A13B /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
-		0A1FC40424AC65AA0091A13B /* NewsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsView.xib; sourceTree = "<group>"; };
-		0A1FC40624AC65B90091A13B /* ExploreView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreView.xib; sourceTree = "<group>"; };
-		0A1FC40824AC65C20091A13B /* SettingsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsView.xib; sourceTree = "<group>"; };
 		0A1FC41024ACC94F0091A13B /* ModelDataLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDataLogin.swift; sourceTree = "<group>"; };
 		0A1FC41224ACCA250091A13B /* MenuNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuNavBar.swift; sourceTree = "<group>"; };
 		0A1FC41424ACCA4B0091A13B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -51,6 +57,24 @@
 		A315212B24AC823C0029EFE6 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		A315212E24AC871F0029EFE6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A315212F24AC871F0029EFE6 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		A315213224ACF0960029EFE6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A315213324ACF0960029EFE6 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		A315213624ACF0B20029EFE6 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		A315213724ACF0B20029EFE6 /* ExploreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreViewController.xib; sourceTree = "<group>"; };
+		A315213C24ACF0D60029EFE6 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		A315213D24ACF0D60029EFE6 /* NewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
+		A315214124ACF32B0029EFE6 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		A315214224ACF32B0029EFE6 /* FeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
+		A315214624ACF33D0029EFE6 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		A315214724ACF33D0029EFE6 /* CameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
+		A315214F24ACF36E0029EFE6 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
+		A315215024ACF36E0029EFE6 /* AlarmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmViewController.xib; sourceTree = "<group>"; };
+		A315215424ACF38D0029EFE6 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		A315215524ACF38D0029EFE6 /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		A315215924ACF5950029EFE6 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		A315215A24ACF5950029EFE6 /* FavoriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
+		A315215E24ACFC1E0029EFE6 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		A315215F24ACFC1E0029EFE6 /* MoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreViewController.xib; sourceTree = "<group>"; };
 		C7AFFDCCC08D811C83EBA460 /* Pods-BasedProjcet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasedProjcet.debug.xcconfig"; path = "Target Support Files/Pods-BasedProjcet/Pods-BasedProjcet.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +136,12 @@
 		0A1FC3E624AC5E5D0091A13B /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				A315215D24ACFC030029EFE6 /* More */,
+				A315215824ACF5850029EFE6 /* Favorite */,
+				A315215324ACF37E0029EFE6 /* Chat */,
+				A315214E24ACF35E0029EFE6 /* Alarm */,
+				A315214524ACF3310029EFE6 /* Camera */,
+				A315214024ACF31F0029EFE6 /* Feed */,
 				0A1FC3EC24AC5F880091A13B /* News */,
 				0A1FC3EB24AC5EBC0091A13B /* Explore */,
 				0A1FC3EA24AC5EB30091A13B /* Settings */,
@@ -142,8 +172,8 @@
 		0A1FC3EA24AC5EB30091A13B /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				0A1FC3F524AC5FF70091A13B /* SettingsViewController.swift */,
-				0A1FC40824AC65C20091A13B /* SettingsView.xib */,
+				A315213224ACF0960029EFE6 /* SettingsViewController.swift */,
+				A315213324ACF0960029EFE6 /* SettingsViewController.xib */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -151,8 +181,8 @@
 		0A1FC3EB24AC5EBC0091A13B /* Explore */ = {
 			isa = PBXGroup;
 			children = (
-				0A1FC3FC24AC601B0091A13B /* ExploreViewController.swift */,
-				0A1FC40624AC65B90091A13B /* ExploreView.xib */,
+				A315213624ACF0B20029EFE6 /* ExploreViewController.swift */,
+				A315213724ACF0B20029EFE6 /* ExploreViewController.xib */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -160,8 +190,8 @@
 		0A1FC3EC24AC5F880091A13B /* News */ = {
 			isa = PBXGroup;
 			children = (
-				0A1FC3FE24AC602B0091A13B /* NewsViewController.swift */,
-				0A1FC40424AC65AA0091A13B /* NewsView.xib */,
+				A315213C24ACF0D60029EFE6 /* NewsViewController.swift */,
+				A315213D24ACF0D60029EFE6 /* NewsViewController.xib */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -181,6 +211,60 @@
 				77CB5882C5BD8279EB52C337 /* Pods_BasedProjcet.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A315214024ACF31F0029EFE6 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				A315214124ACF32B0029EFE6 /* FeedViewController.swift */,
+				A315214224ACF32B0029EFE6 /* FeedViewController.xib */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		A315214524ACF3310029EFE6 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				A315214624ACF33D0029EFE6 /* CameraViewController.swift */,
+				A315214724ACF33D0029EFE6 /* CameraViewController.xib */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		A315214E24ACF35E0029EFE6 /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				A315214F24ACF36E0029EFE6 /* AlarmViewController.swift */,
+				A315215024ACF36E0029EFE6 /* AlarmViewController.xib */,
+			);
+			path = Alarm;
+			sourceTree = "<group>";
+		};
+		A315215324ACF37E0029EFE6 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				A315215424ACF38D0029EFE6 /* ChatViewController.swift */,
+				A315215524ACF38D0029EFE6 /* ChatViewController.xib */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		A315215824ACF5850029EFE6 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				A315215924ACF5950029EFE6 /* FavoriteViewController.swift */,
+				A315215A24ACF5950029EFE6 /* FavoriteViewController.xib */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		A315215D24ACFC030029EFE6 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				A315215E24ACFC1E0029EFE6 /* MoreViewController.swift */,
+				A315215F24ACFC1E0029EFE6 /* MoreViewController.xib */,
+			);
+			path = More;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,13 +327,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A1FC40724AC65B90091A13B /* ExploreView.xib in Resources */,
-				0A1FC40524AC65AA0091A13B /* NewsView.xib in Resources */,
+				A315215224ACF36E0029EFE6 /* AlarmViewController.xib in Resources */,
+				A315214924ACF33D0029EFE6 /* CameraViewController.xib in Resources */,
+				A315215C24ACF5950029EFE6 /* FavoriteViewController.xib in Resources */,
 				0A1FC3DE24AC5E120091A13B /* LaunchScreen.storyboard in Resources */,
-				0A1FC40924AC65C20091A13B /* SettingsView.xib in Resources */,
 				A315212D24AC823C0029EFE6 /* LoginViewController.xib in Resources */,
+				A315214424ACF32B0029EFE6 /* FeedViewController.xib in Resources */,
+				A315216124ACFC1E0029EFE6 /* MoreViewController.xib in Resources */,
+				A315215724ACF38D0029EFE6 /* ChatViewController.xib in Resources */,
 				A315213124AC871F0029EFE6 /* HomeViewController.xib in Resources */,
+				A315213524ACF0960029EFE6 /* SettingsViewController.xib in Resources */,
+				A315213924ACF0B20029EFE6 /* ExploreViewController.xib in Resources */,
 				0A1FC3DB24AC5E120091A13B /* Assets.xcassets in Resources */,
+				A315213F24ACF0D60029EFE6 /* NewsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,15 +394,21 @@
 			files = (
 				0A1FC41524ACCA4B0091A13B /* Item.swift in Sources */,
 				0A1FC41724ACCA660091A13B /* UserAccess.swift in Sources */,
+				A315215124ACF36E0029EFE6 /* AlarmViewController.swift in Sources */,
+				A315213424ACF0960029EFE6 /* SettingsViewController.swift in Sources */,
 				A315212C24AC823C0029EFE6 /* LoginViewController.swift in Sources */,
+				A315214824ACF33D0029EFE6 /* CameraViewController.swift in Sources */,
+				A315216024ACFC1E0029EFE6 /* MoreViewController.swift in Sources */,
+				A315215B24ACF5950029EFE6 /* FavoriteViewController.swift in Sources */,
+				A315213E24ACF0D60029EFE6 /* NewsViewController.swift in Sources */,
 				0A1FC3D224AC5E0F0091A13B /* AppDelegate.swift in Sources */,
 				0A1FC3D424AC5E0F0091A13B /* SceneDelegate.swift in Sources */,
 				0A1FC41124ACC94F0091A13B /* ModelDataLogin.swift in Sources */,
-				0A1FC3FD24AC601B0091A13B /* ExploreViewController.swift in Sources */,
 				0A1FC41324ACCA250091A13B /* MenuNavBar.swift in Sources */,
-				0A1FC3F624AC5FF70091A13B /* SettingsViewController.swift in Sources */,
 				A315213024AC871F0029EFE6 /* HomeViewController.swift in Sources */,
-				0A1FC3FF24AC602B0091A13B /* NewsViewController.swift in Sources */,
+				A315214324ACF32B0029EFE6 /* FeedViewController.swift in Sources */,
+				A315215624ACF38D0029EFE6 /* ChatViewController.swift in Sources */,
+				A315213824ACF0B20029EFE6 /* ExploreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

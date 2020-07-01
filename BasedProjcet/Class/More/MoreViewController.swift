@@ -1,14 +1,14 @@
 //
-//  NewsViewController.swift
+//  MoreViewController.swift
 //  BasedProjcet
 //
-//  Created by Gregory Kevin on 01/07/20.
+//  Created by Gregory Kevin on 02/07/20.
 //  Copyright © 2020 Malvin Santoso. All rights reserved.
 //
 
 import UIKit
 
-class NewsViewController: UIViewController {
+class MoreViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
