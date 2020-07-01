@@ -15,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var navController: UINavigationController?
     var loginViewController: LoginViewController?
     var navArrayMenu = [UINavigationController]()
+    var tabBarController = UITabBarController()
+
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -87,8 +89,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let modelDataLogin = ModelDataLogin()
         
+        
         var menuName: [String: String] = [:]
-        for menuItem in modelDataLogin.menuNavBar! {
+        print(modelDataLogin.menuNavbars)
+        for menuItem in modelDataLogin.menuNavbars {
+            print("masuk")
             let menu = menuItem.mobileMenuId
             guard let menuNav = menuDictionary["\(menu)"] else {
                 return
@@ -97,8 +102,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             navArrayMenu.append(menuNav)
         }
         navArrayMenu.append(more)
+        
+        let settingsTab = UITabBarItem(title: menuName["1"], image: .checkmark, selectedImage: .none)
+        settingsViewController.tabBarItem = settingsTab
+        
+        let favoriteTab = UITabBarItem(title: menuName["2"], image: .checkmark, selectedImage: .none)
+        favoriteViewController.tabBarItem = favoriteTab
+        
+        let feedTab = UITabBarItem(title: menuName["3"], image: .checkmark, selectedImage: .none)
+        feedViewController.tabBarItem = feedTab
+        
+        let cameraTab = UITabBarItem(title: menuName["4"], image: .checkmark, selectedImage: .none)
+        cameraViewController.tabBarItem = cameraTab
+        
+        let alarmTab = UITabBarItem(title: menuName["5"], image: .checkmark, selectedImage: .none)
+        alarmViewController.tabBarItem = alarmTab
+        
+        let chatTab = UITabBarItem(title: menuName["6"], image: .checkmark, selectedImage: .none)
+        chatViewController.tabBarItem = chatTab
+        
+        let moreTab = UITabBarItem(title: "More", image: .checkmark, selectedImage: .none)
+        moreViewController.tabBarItem = moreTab
+        
+        tabBarController.viewControllers = navArrayMenu
+        tabBarController.selectedIndex = 0
+        window.rootViewController = tabBarController
+        window.makeKeyAndVisible()
     }
 
 
 }
-

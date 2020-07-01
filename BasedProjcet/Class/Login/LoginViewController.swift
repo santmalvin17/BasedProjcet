@@ -23,33 +23,33 @@ class LoginViewController: UIViewController {
         let vc = HomeViewController()
         navigationController?.pushViewController(vc, animated: true)
         ACRequest.POST_SIGNIN(email: emailTextField.text!, password: passwordTextField.text!)
-        
+        let appDelegate = UIApplication.shared.delegate as? AppDelegate
+        appDelegate?.goToHome()
     }
     
-    func login() {
-        let parameters:[String:Any] = [
-            "email":"fred@gmail.com",
-            "password":"1234"
-        ]
-        AF.request("https://acl-hoonian.herokuapp.com/login", method: .post, parameters: parameters, encoding: JSONEncoding.default)
-        .responseJSON { response in
-//            print(response)
-            do {
-                let json = try JSON(data: response.data!)
-                // make sure this JSON is in the format we expect
-                if let modelDataLogin = try JSONDecoder().decode(ModelDataLogin.self, from: json["data"].rawData()) as? ModelDataLogin {
-                    // try to read out a string array
-                    let item = Item()
-                    print(item.mobileMenuDesc!)
-
-                }
-
-
-            } catch let error as NSError {
-                print("Failed to load: \(error.localizedDescription)")
-            }
-        }
-    }
+//    func login() {
+//        let parameters:[String:Any] = [
+//            "email":"fred@gmail.com",
+//            "password":"1234"
+//        ]
+//        AF.request("https://acl-hoonian.herokuapp.com/login", method: .post, parameters: parameters, encoding: JSONEncoding.default)
+//        .responseJSON { response in
+////            print(response)
+//            do {
+//                let json = try JSON(data: response.data!)
+//                // make sure this JSON is in the format we expect
+//                if let modelDataLogin = try JSONDecoder().decode(ModelDataLogin.self, from: json["data"].rawData()) as? ModelDataLogin {
+//                    // try to read out a string array
+//
+//
+//                }
+//
+//
+//            } catch let error as NSError {
+//                print("Failed to load: \(error.localizedDescription)")
+//            }
+//        }
+//    }
     
     /*
     // MARK: - Navigation

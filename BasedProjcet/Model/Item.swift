@@ -7,8 +7,15 @@
 //
 
 import Foundation
+import SwiftyJSON
 
-struct Item: Decodable{
-    var mobileMenuDesc:String?
-    var mobileMenuId:Int?
+class Item: NSObject{
+    var mobileMenuDesc = ""
+    var mobileMenuId = ""
+    
+    func objectMapping(json: JSON){
+        mobileMenuDesc = json["mobileMenuDesc"].stringValue
+        mobileMenuId = String(json["mobileMenuId"].stringValue)
+
+    }
 }

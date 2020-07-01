@@ -31,28 +31,16 @@ class ACAPI: NSObject {
     }
     
     static func POST(url:String, parameter:Parameters, header:HTTPHeaders , showHUD:Bool) {
-        if(showHUD) {
+               if(showHUD) {
             SVProgressHUD.show(withStatus: "Please wait...")
         }
         AF.request(
             URL(string: url)!,
             method: .post,
             parameters: parameter,
-            encoding: JSONEncoding.default,
+            encoding: URLEncoding.default,
             headers: header).responseJSON { (response) in
-                do {
-                    let json = try JSON(data: response.data!)
-                    // make sure this JSON is in the format we expect
-                    if let modelDataLogin = try JSONDecoder().decode(ModelDataLogin.self, from: json["data"].rawData()) as? ModelDataLogin {
-                        // try to read out a string array
-                        print(modelDataLogin.token!)
-
-                    }
-
-
-                } catch let error as NSError {
-                    print("Failed to load: \(error.localizedDescription)")
-                }
+            print(response)
         }
     }
   

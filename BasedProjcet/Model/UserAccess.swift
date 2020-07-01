@@ -7,8 +7,16 @@
 //
 
 import Foundation
+import SwiftyJSON
 
-struct UserAccess: Decodable{
-    var item:[Item]?
+class UserAccess: NSObject{
+    var item = [Item]()
     
+    func objectMapping(json:JSON){
+        for data in json["item"].arrayValue {
+            let d = Item()
+            d.objectMapping(json: data)
+            item.append(d)
+        }
+    }
 }
